@@ -53,7 +53,7 @@ class User
     private ?Department $department = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $FilePath = null;
+    private ?string $filePath = null;
 
     public function getId(): ?int
     {
@@ -158,12 +158,12 @@ class User
 
     public function getFilePath(): ?string
     {
-        return $this->FilePath;
+        return $this->filePath;
     }
 
-    public function setFilePath(?string $FilePath): static
+    public function setFilePath(?string $filePath): static
     {
-        $this->FilePath = $FilePath;
+        $this->filePath = $filePath;
 
         return $this;
     }

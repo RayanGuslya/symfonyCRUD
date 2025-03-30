@@ -28,10 +28,10 @@
         <input type="text" id="address" name="address" value="{{ user.address }}" required><br><br>
 
         <label for="file">Аватар:</label><br>
-        {% if user.FilePath %}
+        {% if user.filePath %}
             <img src="{{ asset(user.FilePath) }}" alt="" width="50"><br>
         {% endif %}
-        <input type="file" id="file" name="file" value="{{ user.FilePath }}" required><br><br>
+        <input type="file" id="file" name="file" value="{{ user.filePath }}" required><br><br>
 
         <label for="department">Отдел:</label><br>
         <select name="department" id="department">

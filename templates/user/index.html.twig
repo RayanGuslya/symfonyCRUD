@@ -103,8 +103,8 @@
                     <td>{{ user.telegram }}</td>
                     <td>{{ user.address }}</td>
                     <td>
-                        {% if user.FilePath %}
-                            <img src="public/{{ asset(user.FilePath) }}" alt="" width="80" height="60">
+                        {% if user.filePath %}
+                            <img src="public/{{ asset(user.filePath) }}" alt="" width="80" height="60">
                         {% else %}
                             Нет аватара
                         {% endif %}
